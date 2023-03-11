@@ -1,0 +1,167 @@
+html,
+body,
+ul{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'source sans pro', sans-serif;
+}
+
+/* common css */
+.title,
+.hero-text,
+.article-title,
+.footer-title{
+    margin:0;
+}
+nav a,
+.footer-title,
+.copyright{
+    font-size: 0.75rem;
+}
+.hero-text,
+.hero-content,
+.section-title{
+    font-size: 0.9875rem;
+}
+.recent-post,
+.article-text{
+    font-size: 1rem;
+}
+.recent-post,
+footer{
+    text-align:center;
+}
+
+/* header css */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+
+.title{
+    font-family: 'roboto', sans-serif;
+    font-size: 0.9375rem;
+    color: #0E0E0E;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li{
+    margin-left: 1.0625em;
+}
+
+nav a{
+    color:#0E0E0E;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* main css */
+main{
+    width:90%;
+    margin: 0 auto;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 230px auto;
+    grid-template-areas:
+        "image ..."
+        "intro intro"
+        "introtext introtext"
+        "fullcontent fullcontent";
+        margin: 1.625em 0;
+
+    }
+.hero-img{
+    grid-area: image;
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    border-radius: 50%;
+}
+.hero-intro{
+    grid-area: intro;
+}
+
+.hero-text{
+    grid-area: introtext; 
+}
+.hero-content{
+    grid-area: fullcontent;
+    margin: 1.875em 0;
+}
+.para{
+    display:block;
+    margin-top: 1em;
+}
+.recent-content{
+    margin-bottom: 3.4375em;
+}
+
+.recent-post{
+    font-weight:700;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap:1.7em;
+}
+.article-img{
+    width:100%;
+}
+.article-date{
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    margin: 0.875em 0;
+}
+.article-title{
+    font-size: 1.5rem;
+}
+.article-text{
+    margin: 0.625em 0;
+    color: #505050;
+}
+
+/* footer css */
+footer{
+    background-color: #202020;
+    color: #ECECEC;
+    padding: 2.25em;
+}
+.copyright{
+    font-weight: 200;
+    margin-top:3px;
+}
+
+
+@media (min-width: 768px){
+    header{
+        padding: 1.5em;
+    }
+    .title{
+        font-size: 1.25rem;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+    .hero{
+        grid-template-areas:
+            "image intro"
+            "image introtext"
+            "fullcontent fullcontent";
+    }
+    .hero-intro{
+        margin-bottom:0;
+    }
+    .hero-text{
+        margin:0;
+    }
+    .hero-content{
+        max-width: 1050px;
+        margin: 2.5em auto;
+    }
+}

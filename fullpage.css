@@ -1,0 +1,144 @@
+html,
+body,ul{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'source sans pro', sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    color:#0E0E0E;
+    padding: 1.2em;
+}
+.title,
+.main-post-date,
+.article-title,
+.footer-title,
+.copyright{
+    margin:0;
+}
+.title,
+.recent-post{
+    font-weight: 700;
+}
+.title{
+    font-family: 'roboto', sans-serif;
+    font-size: 0.9375rem;
+}
+nav a,
+.main-post-date,
+.footer-title,
+.copyright{
+    font-size: 0.75rem;
+}
+nav a{
+    color:#0E0E0E;
+    text-decoration: none;
+    font-weight: 400;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+ul li{
+    margin-left:1.0625em;
+}
+.main-post{
+    max-width: 90%;
+    margin:1.25em auto;
+}
+
+.main-post-date,
+.article-date{
+    text-transform: uppercase;
+}
+.main-post-title{
+    margin: 0.5em 0;
+    font-size:1.9rem;
+}
+.main-post-img,
+.article-img{
+    width:100%;
+}
+.main-post-img{
+    margin:0.9375em 0;
+}
+.main-post-text{
+    color:#151515;
+}
+.main-post-text,
+.section-title,
+.recent-post,
+.article-text{
+    font-size: 1rem;
+}
+.para{
+    display: block;
+    margin-top:1em;
+}
+.recent-content{
+    margin: 3.125em auto;
+    width:90%;
+}
+
+.recent-post{  
+    margin: 1.6875em 0;
+    text-align:center;
+}
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap:1.7em;
+}
+.article-date{
+    margin: 0.875em 0;
+    font-size: 0.875rem;
+}
+.article-title{
+    font-size: 1.5rem;
+}
+.article-text{
+    margin: 0.625em 0;
+    color: #505050;
+}
+footer{
+    background-color:#202020;
+    color:#ECECEC;
+    text-align:center;
+    padding: 2.25em;
+}
+
+.copyright{
+    font-weight: 200;
+    margin-top:3px;
+}
+@media (min-width: 768px){
+    .head{
+        padding: 1.5em;
+    }
+    .title,
+    .section-title{
+        font-size: 1.25rem;
+    }
+    nav a,
+    .main-post-date{
+        font-size: 1rem;
+    }
+    section {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    .main-post-title{
+        font-size: 2.25rem;
+    }
+    .main-post-text{
+        font-size: 1.125rem;
+    }
+    .section-title{
+        margin: 1.5em 0;
+    }
+
+}
